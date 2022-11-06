@@ -8,9 +8,6 @@ import SwiftUI
 
 class CalculationViewModel: ObservableObject {
     @Published var result: CalculateResult = .init(left: 0, right: 0, answer: 0, mode: .add)
-//    @Published var value0: Int = 0
-//    @Published var value1: Int = 0
-//    @Published var correctAnswer: Int = 0
     @Published var answers: [Int] = [Int]()
     @Published var isCompleted: Bool = false
     
