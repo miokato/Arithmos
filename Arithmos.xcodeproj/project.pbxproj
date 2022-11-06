@@ -19,6 +19,7 @@
 		952001EB29179645008D5614 /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001EA29179645008D5614 /* SoundService.swift */; };
 		952001F0291797B0008D5614 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 952001EE291797B0008D5614 /* correct.mp3 */; };
 		952001F1291797B0008D5614 /* incorrect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 952001EF291797B0008D5614 /* incorrect.mp3 */; };
+		952001F32917A39C008D5614 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001F22917A39C008D5614 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		952001EA29179645008D5614 /* SoundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
 		952001EE291797B0008D5614 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
 		952001EF291797B0008D5614 /* incorrect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incorrect.mp3; sourceTree = "<group>"; };
+		952001F22917A39C008D5614 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				952001D929173269008D5614 /* Utils.swift */,
+				952001F22917A39C008D5614 /* Calculator.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				952001DD291732F1008D5614 /* HomeView.swift in Sources */,
 				952001CD29173173008D5614 /* ContentView.swift in Sources */,
 				952001E629177C31008D5614 /* CalculationViewModel.swift in Sources */,
+				952001F32917A39C008D5614 /* Calculator.swift in Sources */,
 				952001CB29173173008D5614 /* ArithmosApp.swift in Sources */,
 				952001E129173302008D5614 /* ResultView.swift in Sources */,
 				952001EB29179645008D5614 /* SoundService.swift in Sources */,
