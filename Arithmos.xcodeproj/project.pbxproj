@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		952001CB29173173008D5614 /* ArithmosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001CA29173173008D5614 /* ArithmosApp.swift */; };
+		952001CD29173173008D5614 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001CC29173173008D5614 /* ContentView.swift */; };
+		952001CF29173173008D5614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952001CE29173173008D5614 /* Assets.xcassets */; };
+		952001D229173173008D5614 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952001D129173173008D5614 /* Preview Assets.xcassets */; };
+		952001DA29173269008D5614 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001D929173269008D5614 /* Utils.swift */; };
+		952001DD291732F1008D5614 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001DC291732F1008D5614 /* HomeView.swift */; };
+		952001DF291732FC008D5614 /* CalculationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001DE291732FC008D5614 /* CalculationView.swift */; };
+		952001E129173302008D5614 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001E029173302008D5614 /* ResultView.swift */; };
+		952001E629177C31008D5614 /* CalculationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001E529177C31008D5614 /* CalculationViewModel.swift */; };
+		952001EB29179645008D5614 /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001EA29179645008D5614 /* SoundService.swift */; };
+		952001F0291797B0008D5614 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 952001EE291797B0008D5614 /* correct.mp3 */; };
+		952001F1291797B0008D5614 /* incorrect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 952001EF291797B0008D5614 /* incorrect.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		952001C729173173008D5614 /* Arithmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arithmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		952001CA29173173008D5614 /* ArithmosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmosApp.swift; sourceTree = "<group>"; };
+		952001CC29173173008D5614 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		952001CE29173173008D5614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		952001D129173173008D5614 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		952001D929173269008D5614 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		952001DC291732F1008D5614 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		952001DE291732FC008D5614 /* CalculationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationView.swift; sourceTree = "<group>"; };
+		952001E029173302008D5614 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		952001E529177C31008D5614 /* CalculationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewModel.swift; sourceTree = "<group>"; };
+		952001EA29179645008D5614 /* SoundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
+		952001EE291797B0008D5614 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		952001EF291797B0008D5614 /* incorrect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incorrect.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		952001C429173173008D5614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		952001BE29173173008D5614 = {
+			isa = PBXGroup;
+			children = (
+				952001C929173173008D5614 /* Arithmos */,
+				952001C829173173008D5614 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		952001C829173173008D5614 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				952001C729173173008D5614 /* Arithmos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		952001C929173173008D5614 /* Arithmos */ = {
+			isa = PBXGroup;
+			children = (
+				952001EC291796A6008D5614 /* Resources */,
+				952001E929179635008D5614 /* Service */,
+				952001E429177C20008D5614 /* ViewModels */,
+				952001DB291732DF008D5614 /* Views */,
+				952001D829173236008D5614 /* Domain */,
+				952001CA29173173008D5614 /* ArithmosApp.swift */,
+				952001CC29173173008D5614 /* ContentView.swift */,
+				952001CE29173173008D5614 /* Assets.xcassets */,
+				952001D029173173008D5614 /* Preview Content */,
+			);
+			path = Arithmos;
+			sourceTree = "<group>";
+		};
+		952001D029173173008D5614 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				952001D129173173008D5614 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		952001D829173236008D5614 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				952001D929173269008D5614 /* Utils.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		952001DB291732DF008D5614 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				952001DC291732F1008D5614 /* HomeView.swift */,
+				952001DE291732FC008D5614 /* CalculationView.swift */,
+				952001E029173302008D5614 /* ResultView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		952001E429177C20008D5614 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				952001E529177C31008D5614 /* CalculationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		952001E929179635008D5614 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				952001EA29179645008D5614 /* SoundService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		952001EC291796A6008D5614 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				952001ED291796AF008D5614 /* Sound */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		952001ED291796AF008D5614 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				952001EE291797B0008D5614 /* correct.mp3 */,
+				952001EF291797B0008D5614 /* incorrect.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		952001C629173173008D5614 /* Arithmos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952001D529173173008D5614 /* Build configuration list for PBXNativeTarget "Arithmos" */;
+			buildPhases = (
+				952001C329173173008D5614 /* Sources */,
+				952001C429173173008D5614 /* Frameworks */,
+				952001C529173173008D5614 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Arithmos;
+			productName = Arithmos;
+			productReference = 952001C729173173008D5614 /* Arithmos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		952001BF29173173008D5614 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					952001C629173173008D5614 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 952001C229173173008D5614 /* Build configuration list for PBXProject "Arithmos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 952001BE29173173008D5614;
+			productRefGroup = 952001C829173173008D5614 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				952001C629173173008D5614 /* Arithmos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		952001C529173173008D5614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952001F1291797B0008D5614 /* incorrect.mp3 in Resources */,
+				952001D229173173008D5614 /* Preview Assets.xcassets in Resources */,
+				952001CF29173173008D5614 /* Assets.xcassets in Resources */,
+				952001F0291797B0008D5614 /* correct.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		952001C329173173008D5614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952001DA29173269008D5614 /* Utils.swift in Sources */,
+				952001DF291732FC008D5614 /* CalculationView.swift in Sources */,
+				952001DD291732F1008D5614 /* HomeView.swift in Sources */,
+				952001CD29173173008D5614 /* ContentView.swift in Sources */,
+				952001E629177C31008D5614 /* CalculationViewModel.swift in Sources */,
+				952001CB29173173008D5614 /* ArithmosApp.swift in Sources */,
+				952001E129173302008D5614 /* ResultView.swift in Sources */,
+				952001EB29179645008D5614 /* SoundService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		952001D329173173008D5614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		952001D429173173008D5614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		952001D629173173008D5614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Arithmos/Preview Content\"";
+				DEVELOPMENT_TEAM = 6G9A5395V2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.miokato.Arithmos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		952001D729173173008D5614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Arithmos/Preview Content\"";
+				DEVELOPMENT_TEAM = 6G9A5395V2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.miokato.Arithmos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		952001C229173173008D5614 /* Build configuration list for PBXProject "Arithmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952001D329173173008D5614 /* Debug */,
+				952001D429173173008D5614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952001D529173173008D5614 /* Build configuration list for PBXNativeTarget "Arithmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952001D629173173008D5614 /* Debug */,
+				952001D729173173008D5614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 952001BF29173173008D5614 /* Project object */;
+}
