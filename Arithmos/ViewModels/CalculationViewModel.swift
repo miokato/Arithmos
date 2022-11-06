@@ -7,9 +7,10 @@
 import SwiftUI
 
 class CalculationViewModel: ObservableObject {
-    @Published var value0: Int = 0
-    @Published var value1: Int = 0
-    @Published var correctAnswer: Int = 0
+    @Published var result: CalculateResult = .init(left: 0, right: 0, answer: 0, mode: .add)
+//    @Published var value0: Int = 0
+//    @Published var value1: Int = 0
+//    @Published var correctAnswer: Int = 0
     @Published var answers: [Int] = [Int]()
     @Published var isCompleted: Bool = false
     
@@ -35,10 +36,7 @@ class CalculationViewModel: ObservableObject {
             isCompleted = true
         }
         
-        let result = calculator.calculate(mode: calculateMode)
-        value0 = result.leftValue
-        value1 = result.rightValue
-        correctAnswer = result.resultValue
+        result = calculator.calculate(mode: calculateMode)
         answers = getRandomValuesWithCorrectAnswer(count: answerCount)
         questionCount += 1
     }
@@ -50,7 +48,7 @@ class CalculationViewModel: ObservableObject {
     }
     
     private func getRandomValuesWithCorrectAnswer(count: Int) -> [Int] {
-        let answer = correctAnswer
+        let answer = result.answer
         var answers = [Int]()
         for i in 0..<count {
             answers.append(answer + i)

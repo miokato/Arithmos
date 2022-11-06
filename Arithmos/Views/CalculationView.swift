@@ -18,7 +18,7 @@ struct CalculationView: View {
     private let incorrectText = "❌ : おしい"
     
     func showAnswer(answer: Int) {
-        if answer == viewModel.correctAnswer {
+        if answer == viewModel.result.answer {
             correctLabelText = correctText
             viewModel.next()
             soundService.playCorrect()
@@ -45,7 +45,7 @@ struct CalculationView: View {
                 .foregroundColor(.gray)
                 .padding()
             Spacer()
-            Text("\(viewModel.value0) \(calculateMode.simbolText) \(viewModel.value1) = ?")
+            Text("\(viewModel.result.left) \(viewModel.result.mode.simbolText) \(viewModel.result.right) = ?")
                 .font(.largeTitle)
                 .bold()
                 .foregroundColor(.gray)

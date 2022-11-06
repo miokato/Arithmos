@@ -12,6 +12,7 @@ enum CalculateMode: String {
     case sub = "ひきざん"
     case mul = "かけざん"
     case div = "わりざん"
+    case all = "ぜんぶ"
     
     var systemName: String {
         switch self {
@@ -23,6 +24,8 @@ enum CalculateMode: String {
             return "multiply.circle"
         case .div:
             return "divide.circle"
+        case .all:
+            return "circle"
         }
     }
     
@@ -36,6 +39,8 @@ enum CalculateMode: String {
             return "✖️"
         case .div:
             return "➗"
+        default:
+            return ""
         }
     }
 }
