@@ -67,11 +67,10 @@
 		952001C929173173008D5614 /* Arithmos */ = {
 			isa = PBXGroup;
 			children = (
-				952001EC291796A6008D5614 /* Resources */,
-				952001E929179635008D5614 /* Service */,
-				952001E429177C20008D5614 /* ViewModels */,
-				952001DB291732DF008D5614 /* Views */,
 				952001D829173236008D5614 /* Domain */,
+				952001E929179635008D5614 /* Service */,
+				952001DB291732DF008D5614 /* Views */,
+				952001E429177C20008D5614 /* ViewModels */,
 				952001CA29173173008D5614 /* ArithmosApp.swift */,
 				952001CC29173173008D5614 /* ContentView.swift */,
 				952001CE29173173008D5614 /* Assets.xcassets */,
@@ -122,13 +121,6 @@
 				952001EA29179645008D5614 /* SoundService.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		952001EC291796A6008D5614 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
