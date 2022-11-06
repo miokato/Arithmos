@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    var operations: [CalculateMode] = [.add, .sub, .mul, .div, .all]
+    var operations: [CalculateMode] = [.add, .sub, .mul, .div, .addsub, .all]
     var body: some View {
         VStack {
             NavigationView {

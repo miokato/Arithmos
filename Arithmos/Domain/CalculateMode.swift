@@ -10,6 +10,7 @@ import Foundation
 enum CalculateMode: String {
     case add = "たしざん"
     case sub = "ひきざん"
+    case addsub = "たすとひく"
     case mul = "かけざん"
     case div = "わりざん"
     case all = "ぜんぶ"
@@ -20,6 +21,8 @@ enum CalculateMode: String {
             return "plus.circle"
         case .sub:
             return "minus.circle"
+        case .addsub:
+            return "plus.forwardslash.minus"
         case .mul:
             return "multiply.circle"
         case .div:

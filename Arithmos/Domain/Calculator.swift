@@ -22,6 +22,7 @@ struct Calculator {
         switch mode {
         case .add: return add()
         case .sub: return sub()
+        case .addsub: return addsub()
         case .mul: return mul()
         case .div: return div()
         case .all: return all()
@@ -30,6 +31,12 @@ struct Calculator {
     
     func all() -> CalculateResult {
         let modes: [CalculateMode] = [.add, .sub, .mul, .div]
+        let mode = modes.randomElement() ?? .add
+        return calculate(mode: mode)
+    }
+    
+    func addsub() -> CalculateResult {
+        let modes: [CalculateMode] = [.add, .sub]
         let mode = modes.randomElement() ?? .add
         return calculate(mode: mode)
     }
