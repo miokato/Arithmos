@@ -20,6 +20,7 @@
 		952001F0291797B0008D5614 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 952001EE291797B0008D5614 /* correct.mp3 */; };
 		952001F1291797B0008D5614 /* incorrect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 952001EF291797B0008D5614 /* incorrect.mp3 */; };
 		952001F32917A39C008D5614 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001F22917A39C008D5614 /* Calculator.swift */; };
+		952001F52917D20A008D5614 /* CalculateMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952001F42917D20A008D5614 /* CalculateMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		952001EE291797B0008D5614 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
 		952001EF291797B0008D5614 /* incorrect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incorrect.mp3; sourceTree = "<group>"; };
 		952001F22917A39C008D5614 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		952001F42917D20A008D5614 /* CalculateMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				952001D929173269008D5614 /* Utils.swift */,
 				952001F22917A39C008D5614 /* Calculator.swift */,
+				952001F42917D20A008D5614 /* CalculateMode.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				952001CB29173173008D5614 /* ArithmosApp.swift in Sources */,
 				952001E129173302008D5614 /* ResultView.swift in Sources */,
 				952001EB29179645008D5614 /* SoundService.swift in Sources */,
+				952001F52917D20A008D5614 /* CalculateMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

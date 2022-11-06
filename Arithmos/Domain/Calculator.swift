@@ -7,70 +7,50 @@
 
 import Foundation
 
-enum CalculateMode: String {
-    case add = "たしざん"
-    case sub = "ひきざん"
-    case mul = "かけざん"
-    case div = "わりざん"
-    
-    var systemName: String {
-        switch self {
-        case .add:
-            return "plus.circle"
-        case .sub:
-            return "minus.circle"
-        case .mul:
-            return "multiply.circle"
-        case .div:
-            return "divide.circle"
-        }
-    }
-    
-    var simbolText: String {
-        switch self {
-        case .add:
-            return "➕"
-        case .sub:
-            return "➖"
-        case .mul:
-            return "✖️"
-        case .div:
-            return "➗"
-        }
-    }
+struct CalculateResult {
+    let leftValue: Int
+    let rightValue: Int
+    let resultValue: Int
 }
 
-
 struct Calculator {
-    func calculate(a: Int, b: Int, mode: CalculateMode) -> Int {
+    let minValue: Int
+    let maxValue: Int
+    
+    func calculate(mode: CalculateMode) -> CalculateResult {
         switch mode {
-        case .add: return add(a: a, b: b)
-        case .sub: return sub(a: a, b: b)
-        case .mul: return mul(a: a, b: b)
-        case .div: return div(a: a, b: b)
+        case .add: return add()
+        case .sub: return sub()
+        case .mul: return mul()
+        case .div: return div()
         }
     }
     
-    func add(a: Int, b: Int) -> Int {
-        return a + b
+    func add() -> CalculateResult {
+        let a = Int.random(in: minValue...maxValue)
+        let b = Int.random(in: minValue...maxValue)
+        return CalculateResult(leftValue: a, rightValue: b, resultValue: a + b)
     }
     
-    func sub(a: Int, b: Int) -> Int {
+    func sub() -> CalculateResult {
+        let a = Int.random(in: minValue...maxValue)
+        let b = Int.random(in: minValue...maxValue)
         if a > b {
-            return a - b
+            return CalculateResult(leftValue: a, rightValue: b, resultValue: a - b)
         }
-        return b - a
+        return CalculateResult(leftValue: b, rightValue: a, resultValue: b - a)
     }
     
-    func mul(a: Int, b: Int) -> Int {
-        return a * b
+    func mul() -> CalculateResult {
+        let a = Int.random(in: minValue...maxValue)
+        let b = Int.random(in: minValue...maxValue)
+        return CalculateResult(leftValue: a, rightValue: b, resultValue: a * b)
     }
     
-    func div(a: Int, b: Int) -> Int {
-        // TODO: WIP
-        if b <= 0 {
-            return 0
-        }
-        return a / b
+    func div() -> CalculateResult {
+        let left = Int.random(in: 1...10)
+        let rights = factors(left)
+        let right = rights.randomElement() ?? 1
+        return CalculateResult(leftValue: left, rightValue: right, resultValue: left / right)
     }
 }
