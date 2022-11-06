@@ -8,22 +8,27 @@
 import SwiftUI
 
 struct HomeView: View {
+    var operations: [CalculateMode] = [.add, .sub, .mul, .div]
     var body: some View {
         VStack {
             NavigationView {
-                NavigationLink {
-                    CalculationView()
-                } label: {
-                    Image(systemName: "plus.circle")
-                        .font(.largeTitle)
-                        .imageScale(.large)
-                        .foregroundColor(.gray)
-                    Text("たしざん")
-                        .font(.largeTitle)
-                        .bold()
-                        .foregroundColor(.gray)
+                List {
+                    ForEach(operations, id: \.self) { operation in
+                        NavigationLink {
+                            CalculationView(calculateMode: operation)
+                        } label: {
+                            Image(systemName: operation.systemName)
+                                .font(.largeTitle)
+                                .imageScale(.large)
+                                .foregroundColor(.gray)
+                            Text(operation.rawValue)
+                                .font(.largeTitle)
+                                .bold()
+                                .foregroundColor(.gray)
+                        }
+                        .navigationTitle("けいさん")
+                    }
                 }
-                .navigationBarBackButtonHidden(true)
             }
         }
     }

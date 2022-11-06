@@ -12,8 +12,8 @@ struct CalculationView: View {
     @StateObject private var viewModel = CalculationViewModel()
     @State private var correctLabelText = "？？？"
     
+    let calculateMode: CalculateMode
     private let soundService = SoundService()
-    
     private let correctText = "⭕️ : あってるよ"
     private let incorrectText = "❌ : おしい"
     
@@ -45,7 +45,7 @@ struct CalculationView: View {
                 .foregroundColor(.gray)
                 .padding()
             Spacer()
-            Text("\(viewModel.value0) + \(viewModel.value1) = ?")
+            Text("\(viewModel.value0) \(calculateMode.simbolText) \(viewModel.value1) = ?")
                 .font(.largeTitle)
                 .bold()
                 .foregroundColor(.gray)
@@ -68,12 +68,15 @@ struct CalculationView: View {
             Spacer()
         }
         .padding()
+        .onAppear {
+            viewModel.calculateMode = calculateMode
+            viewModel.next()
+        }
     }
 }
 
 struct CalculateView_Previews: PreviewProvider {
     static var previews: some View {
-        CalculationView()
+        CalculationView(calculateMode: .add)
     }
 }
-

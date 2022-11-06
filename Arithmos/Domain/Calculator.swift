@@ -7,11 +7,37 @@
 
 import Foundation
 
-enum CalculateMode {
-    case add
-    case sub
-    case mul
-    case div
+enum CalculateMode: String {
+    case add = "たしざん"
+    case sub = "ひきざん"
+    case mul = "かけざん"
+    case div = "わりざん"
+    
+    var systemName: String {
+        switch self {
+        case .add:
+            return "plus.circle"
+        case .sub:
+            return "minus.circle"
+        case .mul:
+            return "multiply.circle"
+        case .div:
+            return "divide.circle"
+        }
+    }
+    
+    var simbolText: String {
+        switch self {
+        case .add:
+            return "➕"
+        case .sub:
+            return "➖"
+        case .mul:
+            return "✖️"
+        case .div:
+            return "➗"
+        }
+    }
 }
 
 

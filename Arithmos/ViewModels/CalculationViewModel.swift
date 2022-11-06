@@ -24,11 +24,7 @@ class CalculationViewModel: ObservableObject {
     let answerCount: Int = 5
     let maxQuestionCount: Int = 20
     let calculator = Calculator()
-    let calculateMode: CalculateMode = .add
-    
-    init() {
-        next()
-    }
+    var calculateMode: CalculateMode = .add
     
     func next() {
         if questionCount == maxQuestionCount {
@@ -36,6 +32,15 @@ class CalculationViewModel: ObservableObject {
         }
         value0 = Int.random(in: minValue...maxValue)
         value1 = Int.random(in: minValue...maxValue)
+        
+        // 答えがマイナスの値にならないように大小関係を変更する
+        if calculateMode == .div || calculateMode == .sub {
+            if value0 < value1 {
+                let temp = value0
+                value0 = value1
+                value1 = temp
+            }
+        }
         correctAnswer = calculator.calculate(a: value0, b: value1, mode: calculateMode)
         answers = getRandomValuesWithCorrectAnswer(count: answerCount)
         questionCount += 1
